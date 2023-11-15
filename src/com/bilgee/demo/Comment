@@ -1,8 +1,7 @@
-Static är ett nyckelord. Static används för att skapa medlemsvariabler och metoder som delas av
+gitStatic är ett nyckelord. Static används för att skapa medlemsvariabler och metoder som delas av
 alla instanser av klassen snarare än att vara specifika för varje objekt.
 En statisk klass i Java kan ändra sina instansvariabler under programkörning.
 Statisk referens pekar alltid på samma plats. Om någon ändrar på ett statisk värde så
 ändras överallt. Kallas också "Global Scope"
 Static metod, kräver inte instansiering för att anropa metod från annan klass.
-
 
