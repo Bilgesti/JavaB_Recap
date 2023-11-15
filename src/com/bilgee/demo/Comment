@@ -1,10 +1,60 @@
 Static är ett nyckelord. Static används för att skapa medlemsvariabler och metoder som delas av
 alla instanser av klassen snarare än att vara specifika för varje objekt.
-En statisk klass i Java kan ändra sina instansvariabler under programkörning.
+En static klass i Java kan ändra sina instansvariabler under programkörning.
 Statisk referens pekar alltid på samma plats. Om någon ändrar på ett statisk värde så
 ändras överallt. Kallas också "Global Scope"
 Static metod, kräver inte instansiering för att anropa metod från annan klass.
 
+Lektion-2 List, LinkedList och arrayList
+List är ett interface. Interface kommer med metoder som vi kan arbeta direkt med. Interfaces har mindre
+funktionalitet redo än klasser. List kan implementera till båda array och LinkedList. Det är ett exempel av
+polymorphism.
+
+LinkedList är en array som ärver från List. LinkedList har pointers och detta hjälper att
+elementen håller koll på sina grannar alltså kan ha koll på framme och nästa data.
+Början och slutet pekar på NULL. Eftersom det finns extra pekare i listan då kräver den ytterligare
+minnesutrymme för att lagra denna pekare tillsammans med nästa pekare och dataobjekt.Bra för att
+lägga till eller ta bort element från början, mitten eller slutet av listan. Valet mellan array och linkedList
+beror på vilken typ av operationer du utför mest i din kod.
+
+ArrayList
+ArrayList är en dynamisk lista där du kan lagra och hantera data av samma typ. Den kan ändra storlek automatisk
+när man lägger till eller ta bort element. ArrayList använder vi för att hålla ordning och snabb tillgång till element
+med hjälp av deras position. InitialCapacity har arrayList (x1,5). Vi kan sätta storleken från början om vi vet om storleken
+snabbare och mindre minne. support null elements.
+
+Lektion_3 Menu Switch
+Switch är en konstruktör som hjälper att fatta beslut baserat på olika värden för en variabel.
+Instansiera en variabel och jämför dess värde med olika fall(case). Om värdet matchar ett av fallen, utförs
+den kod som hör till det fallet.
+
+Menu´s Why?
+ läsbarhet, underhåll, tydligt, undviker långa fula if/else satser
+enklare kontroll, lättare att debuga, break, default, snabbare exekvering. Man kan kombinera med if satser.
+Nackdelar:
+Inte optimalt om vi bara har 2 cases. Om switch utan breaks blir det falla igenom nästa rad.
+Kan bli förvirrande om vi checkar mot objekt.
+
+Lambda är ett uttryck och som en snabb och enkel sätt att skapa små bitar av kod, oftast för att göra
+något specifikt. Det är som att skriva ner en kort instruktion för datorn att följa. Lambda används
+oftast när du behöver en bit kod för att skicka till en annan del av programmet för att göra något, att sortera
+eller filtrera data.
+Enhanced switch använder lambda uttryck ->
+
+switch(){
+case1:
+    sout
+    break;
+
+int dayOfTheWeek = 1;
+switch(dayOfTheWeek){
+case 1,2,3,4,5 -> sout("Weekday");
+case 6,7 -> sout("Weekend")
+default -> sout("NTA");
+
+if/else - svårt att läsa, underhålla, ändra implementation och debugging.
+ 1: if() {}
+ 2: if() {} else {}
 Lektion-4 OOP Deep
 OOP-Class,Objekt,inheritance-arv,abstraktion,encapsulation,polymorphism
 >Visibility modifiers och access modifiers
