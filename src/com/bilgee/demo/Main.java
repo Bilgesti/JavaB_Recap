@@ -3,23 +3,39 @@ package com.bilgee.demo;
 public class Main {
     public static void main(String[] args) {
 
-        // Instantiate
-        Counter counterA = new Counter();
-        Counter counterB = new Counter();
-        Counter counterC = new Counter();
+    int age = 15;
 
-        counterA.increaseCount(); // 0 -> 1
-        counterB.increaseCount(); // 1 -> 2
-        counterC.increaseCount(); // 2 -> 3
+    if(age >= 18) {
+        System.out.println("True");
+    } else if (age >= 15) {
+        System.out.println("False");
+    }
 
-        Counter.sayHello();
+    switch (age){
+        case 1:
+            System.out.println("You are baby");
+            break;
+        case 15:
+            System.out.println("You are definitely 15");
+            break;
+    }
 
-        // TODO Counter DOES NOT have static currently
-        // what is going to happen when we run the code now?
+    int dayOfTheWeek = 5;
 
-        // TODO Why does each counter start with 0 ?
-        // Memory positions, they are NOT shared
-
+    switch (dayOfTheWeek){
+        case 1:
+            System.out.println("Monday");
+        case 2:
+            System.out.println("Tuesday");
+        case 3:
+            System.out.println("Wednesday");
+        case 4:
+            System.out.println("Thursday");
+        case 5:
+            System.out.println("Friday");
+        default:
+            System.out.println("Weekend");
+    }
 
     }
 }

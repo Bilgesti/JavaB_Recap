@@ -5,4 +5,44 @@ Statisk referens pekar alltid på samma plats. Om någon ändrar på ett statisk
 ändras överallt. Kallas också "Global Scope"
 Static metod, kräver inte instansiering för att anropa metod från annan klass.
 
+Lektion_3 Menu Switch
+
+Switch är en konstrukt som hjälper att fatta beslut baserat på olika värden för en variabel.
+Insansierar en variabel och jämför dess värde med olika fall(case). Om värdet matchar ett av fallen, utförs
+den kod som hör till det fallet.
+
+Menu´s Why?
+ läsbarhet, underhåll, tydligt, undviker långa fula if/else satser
+enklare kontroll, lättare att debuga, break, default, snabbare exekvering. Man kan kombinera med if satser.
+Nackdelar:
+Inte optimalt om vi bara har 2 cases. Om switch utan breaks blir det falla igenom nästa rad.
+Kan bli förvirrande om vi checkar mot objekt.
+
+Lambda är ett uttryck och som en snabb och enkel sätt att skapa små bitar av kod, oftast för att göra
+något specifikt. Det är som att skriva ner en kort instruktion för datorn att följa. Lambda används
+oftast när du behöver en bit kod för att skicka till en annan del av programmet för att göra något, att sortera
+eller filtrera data.
+Enhanched switch använder lambda uttryck ->
+
+
+
+
+
+
+
+
+switch(){
+case1:
+    sout
+    break;
+
+int dayOfTheWeek = 1;
+switch(dayOfTheWeek){
+case 1,2,3,4,5 -> sout("Weekday");
+case 6,7 -> sout("Weekend")
+default -> sout("NTA");
+
+if/else - svårt att läsa, underhålla, ändra implementation och debugging.
+ 1: if() {}
+ 2: if() {} else {}
 
