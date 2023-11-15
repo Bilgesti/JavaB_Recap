@@ -1,24 +1,25 @@
 package com.bilgee.demo;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
+    // TODO What can we say about List?
+    List<Integer> scoreList = new ArrayList<>(15);
+    List<String> test2 = new LinkedList<>();
 
-        // Instantiate
-        Counter counterA = new Counter();
-        Counter counterB = new Counter();
-        Counter counterC = new Counter();
+    // TODO -LinkedList vs ArrayList...?
+    // TODO - LinkedList: pointers (from left to right)
+    // TODO - ArrayList: initialCapacity (1,5)
 
-        counterA.increaseCount(); // 0 -> 1
-        counterB.increaseCount(); // 1 -> 2
-        counterC.increaseCount(); // 2 -> 3
+    scoreList.add(500);  // add value 500
+    scoreList.get(0);// Get index 0 -> 500  ( get måste ha i souts)
+    scoreList.set(0,1000);// Change index 0 -> 500 = 1000
+    scoreList.get(0);       // Get index 0 -> 1000
+    scoreList.remove(0); // Remove index 0 -> 1000
 
-        Counter.sayHello();
-
-        // TODO Counter DOES NOT have static currently
-        // what is going to happen when we run the code now?
-
-        // TODO Why does each counter start with 0 ?
-        // Memory positions, they are NOT shared
 
 
     }
