@@ -5,4 +5,25 @@ Statisk referens pekar alltid på samma plats. Om någon ändrar på ett statisk
 ändras överallt. Kallas också "Global Scope"
 Static metod, kräver inte instansiering för att anropa metod från annan klass.
 
+Lektion-4 OOP Deep
+OOP-Class,Objekt,inheritance-arv,abstraktion,encapsulation,polymorphism
+>Visibility modifiers och access modifiers
+public,protected,private,no modifier,package
+Inom klaas public och no modifier går funka.
+Inom method kan funka alla modifier.
 
+Vad är en subklass?
+Det är en typ av klass som är barn till en annan klass. Att använda subklasser gör det möjligt att organisera och strukturera
+koden på ett sätt som gör den lättare att förstå och underhålla. Det ger också möjlighet att återanvända kod eftersom
+subklassen kan ärva egenskaper och funktioner från överklassen.
+
+Getter Setter
+Det är 2 specialtyper av metoder i programmering, och de används för att få tillgång till och ändra värden i en
+klass på ett kontrollerat sätt. Om vi vill hämta ut alla getter så använder man toString metoden.
+
+toString
+Det är en metod som används för att få en textuell representation av ett objekt.
+
+Constructor
+Det är en special funktion som används när du skapar ett objekt och det är instruktion som säger hur ett objekt
+ska skapas.

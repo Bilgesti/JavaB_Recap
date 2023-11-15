@@ -1,25 +1,37 @@
 package com.bilgee.demo;
 
+import Test.AccessModTest;
+
 public class Main {
     public static void main(String[] args) {
+    // Testing visibility
+        AccessModTest test = new AccessModTest();
 
-        // Instantiate
-        Counter counterA = new Counter();
-        Counter counterB = new Counter();
-        Counter counterC = new Counter();
+        test.testPublic();
+        /*test.testProtected();
+        test.testNoModifier();
+        test.testPrivate();*/
+        Student benny = new Student();
+        benny.setName("Benny");
+        benny.setAge(15);
+        benny.setGrade('B');
+        benny.setTired(true);
 
-        counterA.increaseCount(); // 0 -> 1
-        counterB.increaseCount(); // 1 -> 2
-        counterC.increaseCount(); // 2 -> 3
+        System.out.println(benny);
 
-        Counter.sayHello();
+        // TODO Task: +5, then subtract by 4
+        benny.setScore(50);
 
-        // TODO Counter DOES NOT have static currently
-        // what is going to happen when we run the code now?
+        // TODO Solution
+        System.out.println(benny.getScore());
+        benny.setScore(benny.getScore()+ 5 );
+        System.out.println(benny.getScore());
+        benny.setScore(benny.getScore() -4 );
+        System.out.println(benny.getScore());
 
-        // TODO Why does each counter start with 0 ?
-        // Memory positions, they are NOT shared
-
-
+        // TODO- Adding the book to the student
+        benny.setBook(
+                new Book(250,"Benny","Becoming a Wizard"));
+        System.out.println(benny.getBook());
     }
 }
