@@ -27,3 +27,50 @@ Det är en metod som används för att få en textuell representation av ett obj
 Constructor
 Det är en special funktion som används när du skapar ett objekt och det är instruktion som säger hur ett objekt
 ska skapas.
+
+Polymorphism
+Det handlar om att objekt av olika typer kan användas på ett flexibelt sätt. Även om vi har olika typer av
+saker eller objekt, kan vi använda dem på ett liknande sätt om de har något gemensamt relation. Med abstraktion och ärv
+IAnimal superclass -> dog and cat implements samma metod. utföra något unikt till exempel dog och cat har samma metod
+men dem använder metoderna på egna sätt.
+Till exempel. List<String> test = new ArrayList<>(); och array kan bli LinkedList<>();
+List är ett interface.
+Om vi har ett list som förälder och den är abstrakt då vet vi att alltid pekar på list.
+
+Med extends utökar funktionalitet och attribut.
+Super är föräldern. I ett förhållande till familj och arv , så är super något som hänvisar till originalet
+som vi ärver från.
+
+WriteFile
+Vad kan gå fel?
+Felhantering preparation
+(IO Exception)
+-file or directory permission issue
+-insufficient disk space
+-hardware failures
+-Disk full errors
+-Other low-level I/O errors
+-File not found
+-unsupported encoding
+-file already exists
+-network issues
+try catch
+
+Regex
+Regex är ett uttryck som ett magiskt mönster du kan använda när du letar efter något specifikt i en text.
+Användningen av Regex gör det enklare att hitta och hantera info i texter och är användbart när behöver göra
+avancerad sökning eller bearbetning av textdata.
+
+Final
+Final är som att ett nyckelord och det är slutligt,Tilldelas ett värde endast en gång
+Går ej att ändra på
+Synkronisering behövs ej
+Abstrakt klass attribut är inte final-Går att fixa
+Bra för Dependency Injection
+
+
+
+Enum
+Enum är en klass och listar och räknar upp saker. Final och enum går i hand i hand.
+Skillnaden är final används för att göra något oföränderligt, medan Enum används
+för att lista och räkna upp på ett begränsat och tydligt sätt.
