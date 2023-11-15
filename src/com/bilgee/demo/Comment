@@ -5,3 +5,22 @@ Statisk referens pekar alltid på samma plats. Om någon ändrar på ett statisk
 ändras överallt. Kallas också "Global Scope"
 Static metod, kräver inte instansiering för att anropa metod från annan klass.
 
+Polymorphism
+Det handlar om att objekt av olika typer kan användas på ett flexibelt sätt. Även om vi har olika typer av
+saker eller objekt, kan vi använda dem på ett liknande sätt om de har något gemensamt relation. Med abstraktion och ärv
+IAnimal superclass -> dog and cat implements samma metod. utföra något unikt till exempel dog och cat har samma metod
+men dem använder metoderna på egna sätt.
+Till exempel. List<String> test = new ArrayList<>(); och array kan bli LinkedList<>();
+List är ett interface.
+Om vi har ett list som förälder och den är abstrakt då vet vi att alltid pekar på list.
+
+Med extends utökar funktionalitet och attribut.
+Super är föräldern. I ett förhållande till familj och arv , så är super något som hänvisar till originalet
+som vi ärver från.
+
+WriteFile
+Vad kan gå fel?
+
+
+
+
