@@ -74,3 +74,6 @@ Enum
 Enum är en klass och listar och räknar upp saker. Final och enum går i hand i hand.
 Skillnaden är final används för att göra något oföränderligt, medan Enum används
 för att lista och räkna upp på ett begränsat och tydligt sätt.
+
+vad är en fördel med att använda params i Java-metoder?
+Det möjliggör att en metod kan ta ett varierande antal argument.
